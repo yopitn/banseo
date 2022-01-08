@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banba SEO: SEO Tools for your Blog</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="hWrap">
+    <div class="mIn">
+      <div class="nTit">
+        <h1><span class="title">banseo.</span></h1>
+      </div>
+
+      <div class="nSav">
+        <span role='button' aria-label="Save">Save</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="mWrap">
+    <div class="mIn">
+      <div class="mCon">
+        <div class="cTer">
+          <div class="tTit">
+            <input type="text" id='title' autocomplete="off" aria-label="Title" dir="ltr" required>
+            <label for="title">Enter your title</label>
+          </div>
+
+          <div class="tTool" role="toolbar">
+            <div class="tL tF">
+              <div class="tB tV" aria-label='View' role='button'>
+                <svg class="line" viewBox="0 0 24 24"><polyline points="7 8 3 12 7 16"/><polyline points="17 8 21 12 17 16"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+              </div>
+
+              <div class="tS" role="separator"></div>
+
+              <div class="tB" aria-label="Style" role="listbox">
+                <span aria-hidden="true">Style</span>
+                <svg viewBox="0 0 20 20"><polygon points="5 7 15 7 10 12"></polygon></svg>
+                <div class="bD">
+                  <ul>
+                    <li>
+                      <div class='tB' aria-label='Paragraph' data-value='P' role='option'>Paragraph</div>
+                    </li>
+                    <li>
+                      <div class='tB' aria-label='Heading 1' data-value='H1' role='option'>Heading H1</div>
+                    </li>
+                    <li>
+                      <div class='tB' aria-label='Heading 2' data-value='H2' role='option'>Heading H2</div>
+                    </li>
+                    <li>
+                      <div class='tB' aria-label='Heading 3' data-value='H3' role='option'>Heading H3</div>
+                    </li>
+                    <li>
+                      <div class='tB' aria-label='Heading 4' data-value='H4' role='option'>Heading H4</div>
+                    </li>
+                    <li>
+                      <div class='tB' aria-label='Heading 5' data-value='H5' role='option'>Heading H5</div>
+                    </li>
+                    <li>
+                      <div class='tB' aria-label='Heading 6' data-value='H6' role='option'>Heading H6</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tS" role="separator"></div>
+
+              <div class="tB" data-command="undo" aria-label='Undo' role="button">
+                <svg viewBox="0 0 24 24"><path d="M8 7v4L2 6l6-5v4h5a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H8z"/></svg>
+              </div>
+
+              <div class="tB" data-command="redo" aria-label='Redo' role="button">
+                <svg viewBox="0 0 24 24"><path d="M16 7h-5a6 6 0 1 0 0 12h9v2h-9a8 8 0 1 1 0-16h5V1l6 5-6 5V7z"/></svg>
+              </div>
+  
+              <div class="tS" role="separator"></div>
+  
+              <div class="tB" data-command="bold" aria-label='Bold' role="button">
+                <svg class="line" viewBox="0 0 24 24"><path d="M7 5h6a3.5 3.5 0 0 1 0 7h-6z"/><path d="M13 12h1a3.5 3.5 0 0 1 0 7h-7v-7"/></svg>              
+              </div>
+  
+              <div class="tB" data-command="italic" aria-label='Italic' role="button">
+                <svg class='line' viewBox="0 0 24 24"><line x1="11" y1="5" x2="17" y2="5"/><line x1="7" y1="19" x2="13" y2="19"/><line x1="14" y1="5" x2="10" y2="19"/></svg>              
+              </div>
+  
+              <div class="tB" data-command="underline" aria-label='Underline' role="button">
+                <svg class='line' viewBox="0 0 24 24"><path d="M7 5v5a5 5 0 0 0 10 0v-5"/><path d="M5 19h14"/></svg>              
+              </div>
+  
+              <div class="tS" role="separator"></div>
+  
+              <div class="tB" data-command="justifyLeft" aria-label="Align left" role="button">
+                <svg class='line' viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="14" y2="12"/><line x1="4" y1="18" x2="18" y2="18"/></svg>              
+              </div>
+  
+              <div class="tB" data-command="justifyCenter" aria-label="Align center" role="button">
+                <svg class='line' viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6" /><line x1="8" y1="12" x2="16" y2="12" /><line x1="6" y1="18" x2="18" y2="18" /></svg>
+              </div>
+  
+              <div class="tB" data-command="justifyRight" aria-label="Align right" role="button">
+                <svg class="line" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6" /><line x1="10" y1="12" x2="20" y2="12" /><line x1="6" y1="18" x2="20" y2="18" /></svg>
+              </div>
+  
+              <div class="tB" data-command="justifyFull" aria-label="Justify" role="button">
+                <svg class="line" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6" /><line x1="4" y1="12" x2="20" y2="12" /><line x1="4" y1="18" x2="20" y2="18" /></svg>
+              </div>
+  
+              <div class="tS" role="separator"></div>
+  
+              <div class="tB" data-command="insertUnorderedList" aria-label="Bullet list" role="button">
+                <svg class="line" viewBox="0 0 24 24"><line x1="9" y1="6" x2="20" y2="6" /><line x1="9" y1="12" x2="20" y2="12" /><line x1="9" y1="18" x2="20" y2="18" /><line x1="5" y1="6" x2="5" y2="6.01" /><line x1="5" y1="12" x2="5" y2="12.01" /><line x1="5" y1="18" x2="5" y2="18.01" /></svg>
+              </div>
+  
+              <div class="tB" data-command="insertOrderedList" aria-label="Numbered list" role="button">
+                <svg class="line" viewBox="0 0 24 24"><path d="M11 6h9" /><path d="M11 12h9" /><path d="M12 18h8" /><path d="M4 16a2 2 0 1 1 4 0c0 .591 -.5 1 -1 1.5l-3 2.5h4" /><path d="M6 10v-6l-2 2" /></svg>
+              </div>
+  
+              <div class="tS" role="separator"></div>
+  
+              <div class="tB" data-command="insertLinkUrl" aria-label="Insert link" role="button">
+                <svg class="line" viewBox="0 0 24 24"><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" /><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" /></svg>
+              </div>
+  
+              <div class="tB" data-command="unlink" aria-label="Remove link" role="button">
+                <svg class="line" viewBox="0 0 24 24"><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" /><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" /><line x1="16" y1="21" x2="16" y2="19" /><line x1="19" y1="16" x2="21" y2="16" /><line x1="3" y1="8" x2="5" y2="8" /><line x1="8" y1="3" x2="8" y2="5" /></svg>              
+              </div>
+            </div>
+
+            <div class="tR tF">
+              <div class="tB" data-command="editImage" aria-label="Insert image" role="button">
+                <svg class="line" viewBox="0 0 24 24"><line x1="15" y1="8" x2="15.01" y2="8" /><rect x="4" y="4" width="16" height="16" rx="3" /><path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" /><path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" /></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="tTar">
+            <iframe frameborder="0"></iframe>
+            <div data-count='0' class="tCou">words</div>
+          </div>
+        </div>
+
+        <div class="cSeo">
+          <div class="fKy">
+            <input type="text" id="keyword" placeholder='Focus keyword...' autocomplete="off" aria-label="Keyword" required>
+          </div>
+          <div class="sEd">
+            <div class="eLi">https://example.com › your-slug-url</div>
+            <div class="eTi">Banba SEO: Alternative SEO Tools for your Blog</div>
+            <div class="eMt"><span class="mD">28 Dec 2021 — </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque dolor esse itaque consequatur vitae explicabo est! Iure, magni officiis non duci.</div>
+            <div class="eEd">
+              <span>Edit Snippet</span>
+              <svg viewBox="0 0 20 20"><polygon points="5 7 15 7 10 12"></polygon></svg>
+            </div>
+          </div>
+          <div class="cAn">
+            <div class="fG">
+              <div class="fT c"></div>
+              <div class="fD">The text contains 1367 word, this is more than the 300 word recommended minimum.</div>
+            </div>
+
+            <div class="fG">
+              <div class="fT c"></div>
+              <div class="fD">The image on this page contains alt tags with the focus keyword.</div>
+            </div>
+
+            <div class="fG">
+              <div class="fT e"></div>
+              <div class="fD">No outbound links appear in this page.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
